@@ -10,7 +10,6 @@ public class EmployeePayrollData {
         this.id = id;
         this.name = name;
         this.salary = salary;
-
     }
 
     @Override
