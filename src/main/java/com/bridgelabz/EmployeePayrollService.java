@@ -8,10 +8,6 @@ public class EmployeePayrollService {
 
     private List<EmployeePayrollData> employeePayrollList;
 
-    public EmployeePayrollService() {
-
-    }
-
     public EmployeePayrollService(List<EmployeePayrollData> employeePayrollList){
         this.employeePayrollList = employeePayrollList;
     }
@@ -34,7 +30,7 @@ public class EmployeePayrollService {
         employeePayrollList.add(new EmployeePayrollData(id, name, salary));
     }
 
-    private void writeEmployeePayrollData(){
+    private void writeEmployeePayrollData() {
         System.out.println("\nWriting Employee Payroll Roaster to Console\n" + employeePayrollList);
     }
 }
