@@ -13,7 +13,7 @@ public class EmployeePayrollService {
 
     private List<EmployeePayrollData> employeePayrollList;//declare variable
 
-    public EmployeePayrollService(List<EmployeePayrollData> employeePayrollList){//Parameterized constructor
+    public EmployeePayrollService(List<EmployeePayrollData> employeePayrollList) {//Parameterized constructor
         this.employeePayrollList = employeePayrollList;
     }
 
@@ -27,7 +27,7 @@ public class EmployeePayrollService {
         employeePayrollService.writeEmployeePayrollData(IOService.CONSOLE_IO);//calling write method using obj reference
     }
 
-    //Read employee payroll data method
+    // Create the Read Employee Payroll Data Method
     private void readEmployeePayrollData(Scanner consoleInputReader) {
         System.out.println("Enter Employee ID: ");
         int id = consoleInputReader.nextInt();
